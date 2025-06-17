@@ -1,4 +1,3 @@
-
 if ($(".tf-sw-top_bar").length > 0) {
   var preview = $(".tf-sw-top_bar").data("preview");
   var spacing = $(".tf-sw-top_bar").data("space");
@@ -68,7 +67,6 @@ if ($(".tf-sw-slideshow").length > 0) {
         slidesPerView: tablet,
         spaceBetween: spacing,
         centeredSlides: false,
-
       },
       1150: {
         slidesPerView: preview,
@@ -77,8 +75,6 @@ if ($(".tf-sw-slideshow").length > 0) {
       },
     },
   });
-
-
 }
 
 if ($(".tf-sw-effect").length > 0) {
@@ -105,7 +101,6 @@ if ($(".tf-sw-effect").length > 0) {
     },
   });
 }
-
 
 if ($(".thumbs-default").length > 0) {
   var direction = $(".tf-product-media-thumbs-default").data("direction");
@@ -142,9 +137,7 @@ if ($(".thumbs-default").length > 0) {
     thumbs: {
       swiper: thumbsSlider,
     },
-
   });
-
 }
 
 if ($(".thumbs-slider-black").length > 0) {
@@ -182,12 +175,7 @@ if ($(".thumbs-slider-black").length > 0) {
     thumbs: {
       swiper: thumbsSlider,
     },
-
   });
-
-
-
-
 }
 
 if ($(".thumbs-slider-blue").length > 0) {
@@ -225,9 +213,7 @@ if ($(".thumbs-slider-blue").length > 0) {
     thumbs: {
       swiper: thumbsSlider,
     },
-
   });
-
 }
 
 if ($(".thumbs-slider-white").length > 0) {
@@ -265,9 +251,7 @@ if ($(".thumbs-slider-white").length > 0) {
     thumbs: {
       swiper: thumbsSlider,
     },
-
   });
-
 }
 
 if ($(".tf-sw-collection").length > 0) {
@@ -332,7 +316,6 @@ if ($(".tf-sw-lookbook").length > 0) {
     pagination: {
       el: ".sw-pagination-lookbook",
       clickable: true,
-      
     },
     navigation: {
       clickable: true,
@@ -386,7 +369,7 @@ if ($(".tf-lookbook").length > 0) {
   });
   $(".swiper-button").click(function () {
     var slideIndex = $(this).data("slide");
-    swiper1.slideTo(slideIndex,500,false);
+    swiper1.slideTo(slideIndex, 500, false);
   });
 }
 
@@ -503,7 +486,6 @@ if ($(".tf-sw-shop-gallery").length > 0) {
   });
 }
 
-
 if ($(".tf-sw-mobile").length > 0) {
   var preview = $(".tf-sw-mobile").data("preview");
   var tablet = $(".tf-sw-mobile").data("tablet");
@@ -515,8 +497,8 @@ if ($(".tf-sw-mobile").length > 0) {
   var spacingMd = $(".tf-sw-mobile").data("space-md");
   var swiper = new Swiper(".tf-sw-mobile", {
     slidesPerView: mobile,
-    loop:loop,
-    autoplay:play,
+    loop: loop,
+    autoplay: play,
     spaceBetween: spacingMd,
     speed: speed,
     pagination: {
@@ -569,8 +551,8 @@ if ($(".tf-sw-mobile").length > 0) {
 //       }
 //     } else {
 //       if (swiperMb) {
-//         swiperMb.destroy(true, true); 
-//         swiperMb = null; 
+//         swiperMb.destroy(true, true);
+//         swiperMb = null;
 //         $(".tf-sw-mobile .swiper-wrapper").removeAttr('style');
 //         $(".tf-sw-mobile .swiper-slide").removeAttr('style');
 //       }
@@ -582,7 +564,6 @@ if ($(".tf-sw-mobile").length > 0) {
 //     initSwiper();
 //   });
 // }
-
 
 if ($(".tf-sw-mobile-1").length > 0) {
   var swiperMb1;
@@ -609,10 +590,10 @@ if ($(".tf-sw-mobile-1").length > 0) {
       }
     } else {
       if (swiperMb1) {
-        swiperMb1.destroy(true, true); 
-        swiperMb1 = null; 
-        $(".tf-sw-mobile-1 .swiper-wrapper").removeAttr('style');
-        $(".tf-sw-mobile-1 .swiper-slide").removeAttr('style');
+        swiperMb1.destroy(true, true);
+        swiperMb1 = null;
+        $(".tf-sw-mobile-1 .swiper-wrapper").removeAttr("style");
+        $(".tf-sw-mobile-1 .swiper-slide").removeAttr("style");
       }
     }
   }
@@ -622,7 +603,6 @@ if ($(".tf-sw-mobile-1").length > 0) {
     initSwiperMb();
   });
 }
-
 
 if ($(".tf-sw-product-sell-1").length > 0) {
   var preview = $(".tf-sw-product-sell-1").data("preview");
@@ -751,7 +731,6 @@ if ($(".tf-single-slide").length > 0) {
   });
 }
 
-
 if ($(".flat-thumbs-testimonial").length > 0) {
   var previewThumbs = $(".tf-thumb-tes").data("preview");
   var spacingThumbs = $(".tf-thumb-tes").data("space");
@@ -777,7 +756,7 @@ if ($(".flat-thumbs-testimonial").length > 0) {
       nextEl: ".nav-prev-tes-2",
       prevEl: ".nav-next-tes-2",
     },
-   
+
     pagination: {
       el: ".sw-pagination-tes-2",
       clickable: true,
